@@ -1,0 +1,115 @@
+.home-section{
+    padding: 2rem;
+}
+.home-nav{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-right: 5rem;
+    padding-bottom:1rem;
+}
+.home-nav-start{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.home-nav-items{
+    list-style-type: none;
+    display: flex;
+    gap: 0.8rem;
+    width: fit-content;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 0 2px;
+}
+.home-nav-items li{
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+    color: rgb(83, 83, 83);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.4s;
+}
+
+.home-nav-items li:hover{
+    background-image: linear-gradient(to right, #0076ec, #66b1fb);
+    color: white;
+    font-weight: bold;
+}
+
+.home-nav-items li:active{
+    background-image: linear-gradient(to right, #0076ec, #66b1fb);
+    color: white;
+    font-weight: bold;
+    transform: scale(0.9);
+}
+
+.home-nav-active{
+    background-image: linear-gradient(to right, #0076ec, #66b1fb);
+    color: white;
+    font-weight: bold;
+}
+
+.reload-icon{
+    font-size: 1.5rem;
+    color: rgb(76, 76, 76);
+}
+
+.download-btn{
+    font-size: 1.3rem;
+    padding: 0.7rem 2rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 50px;
+    color: rgb(121, 121, 121);
+    display: flex;
+    width: fit-content;
+    gap: 8px;
+    box-shadow: 2px 2px 2px rgb(180, 180, 180);
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.4s;
+}
+
+.download-btn:active{
+    transform: scale(0.9);
+}
+
+.search-field{
+    border: 1px solid rgb(217, 217, 217);
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    box-shadow: 1px 1px 5px rgb(229, 229, 229);
+}
+
+.search-field::placeholder{
+    color: rgb(179, 179, 179);
+}
+
+.search-btn{
+    font-size: 1.3rem;
+    padding: 0.8rem 2rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 8px;
+    color: rgb(121, 121, 121);
+    display: flex;
+    width: fit-content;
+    gap: 8px;
+    box-shadow: 2px 2px 5px rgb(229, 229, 229);
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.4s;
+}
+
+.search-btn:active{
+    transform: scale(0.9);
+}
+
+.filter-icn{
+    font-size: 2rem;
+    color: rgb(110, 110, 110);
+}

@@ -13,3 +13,8 @@
   background-clip: text;
   color: transparent;
 }
+
+.center-heading{
+  text-align: center;
+  margin: 5rem auto;
+}
