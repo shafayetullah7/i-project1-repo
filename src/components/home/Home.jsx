@@ -6,13 +6,18 @@ import Users from '../users/Users';
 import Campaign from '../campaign/Campaign';
 import Tables from '../tables/Tables';
 import List from '../list/List';
+import spinner4 from '../../assets/spinner4.svg';
 
 const Home = () => {
     const [tab,setTab] = useState('users');
-    // const [users,setUsers] = useState();
     const [query,setQuery] = useState('');
-    
     const searchRef = useRef(null);
+    const [loading,setLoading] = useState(true);
+
+
+    const loadOff = () =>{
+        setLoading(false);
+    }
 
     useEffect(()=>{
         if(tab!='users')setQuery('');
@@ -21,9 +26,16 @@ const Home = () => {
 
     const handleSearch = () =>{
         const searchText = searchRef.current.value;
-        console.log(searchText);
+        if(!searchText)return;
+        // console.log(searchText);
+        setQuery(searchText);
         searchRef.current.value='';
-        setTab('users')
+        setLoading(true)
+        setTab('users');
+    }
+
+    const reload = () =>{
+        setQuery('');
     }
 
 
@@ -38,7 +50,7 @@ const Home = () => {
                         <li onClick={()=>setTab('tables')}>Tables</li>
                         <li onClick={()=>setTab('list')}>List</li>
                     </ul>
-                    <TfiReload className='reload-icon'></TfiReload>
+                    <TfiReload className='reload-icon' onClick={reload}></TfiReload>
                     <button className='download-btn'><BsDownload></BsDownload>Download</button>
                 </div>
                 <div>
@@ -49,8 +61,9 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                {tab==='users' && <Users query={query}></Users>}
+            <div className='home-content'>
+                {loading && <img src={spinner4} className='spinner' alt='loading'/>}
+                {tab==='users' && <Users query={query} loadOff={loadOff}></Users>}
                 {tab==='campaign' && <Campaign></Campaign>}
                 {tab==='tables' && <Tables></Tables>}
                 {tab==='list' && <List></List>}

@@ -1,5 +1,28 @@
 .users-section{
     background-color: #fff;
-    padding: 1rem;
+    /* padding: 1rem; */
     border-radius: 10px;
 }
+
+.user-table{
+    /* border: 1px solid; */
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+}
+
+
+.user-table tbody tr:nth-child(odd){
+    background-color: #f9fafb;
+}
+
+.user-table td{
+    padding: 1.5rem 1rem;
+}
+
+.user-table-heading th{
+    color: gray;
+    padding: 1rem 1rem;
+}
+

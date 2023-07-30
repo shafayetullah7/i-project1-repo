@@ -54,6 +54,7 @@
 .reload-icon{
     font-size: 1.5rem;
     color: rgb(76, 76, 76);
+    cursor: pointer;
 }
 
 .download-btn{
@@ -112,4 +113,17 @@
 .filter-icn{
     font-size: 2rem;
     color: rgb(110, 110, 110);
+}
+
+.home-content{
+    position: relative;
+}
+
+.spinner{
+    width: 2rem;
+    display: block;
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
