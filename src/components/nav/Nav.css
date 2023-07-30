@@ -1,21 +1,44 @@
 .nav{
     display: flex;
     justify-content: flex-end;
-    padding: 1rem 2rem;
+    padding: 0.7rem 2rem;
+    background-color: #fff;
+    border-bottom: 2px solid #f3f3f3;
 }
 
-.avatar{
-    border: 1px solid;
-    width: 4.5rem;
-    height: 4.5rem;
-}
 
 .nav-profile{
     width: fit-content;
     display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(247, 247, 247);
+    padding: 0.3rem 0.5rem;
+    border-radius: 50px;
+}
+
+.avatar{
+    /* border: 1px solid; */
+    width: 3.8rem;
+    height: 3.8rem;
 }
 
 .nav-profile-name{
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: bold;
+    color: rgb(61, 61, 61);
+    margin-bottom: 4px;
+    letter-spacing: 1.4px;
+}
+
+.nav-profile-title{
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(109, 109, 109);
+}
+
+.nav-profile-expand-icon{
+    font-size: 1.5rem;
+    width: 3rem;
+    color: rgb(61, 61, 61);
 }

@@ -4,7 +4,7 @@ import Main from './components/main/Main'
 function App() {
 
   return (
-    <div className=''>
+    <div className='font-nunito'>
       <Main></Main>
     </div>
   )

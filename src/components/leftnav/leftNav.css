@@ -3,7 +3,7 @@
     height: 100vh;
     padding: 2.5rem 0;
     /* background-color: blue; */
-    border-right: 2px solid rgb(210, 210, 210);
+    border-right: 2px solid #f3f3f3;
     position: relative;
 }
 .leftnav-icon{

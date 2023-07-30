@@ -1,5 +1,6 @@
 import './Nav.css';
-import avatar from '../../assets/avatar.png'
+import avatar from '../../assets/avatar.png';
+import { FiChevronDown } from "react-icons/fi";
 
 const Nav = () => {
     return (
@@ -10,6 +11,7 @@ const Nav = () => {
                     <p className='nav-profile-name'>ChethanB</p>
                     <p className='nav-profile-title'>Brand</p>
                 </div>
+                <FiChevronDown className='nav-profile-expand-icon'></FiChevronDown>
             </div>
         </div>
     );
