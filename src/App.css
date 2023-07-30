@@ -3,3 +3,13 @@
   margin: 0;
   padding: 0;
 }
+
+.bg-primary{
+  background-image: linear-gradient(to right, #0076ec, #66b1fb);
+}
+.color-primary{
+  background-image: linear-gradient(to right, #0076ec, #90c4f8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

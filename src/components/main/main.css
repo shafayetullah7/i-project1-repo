@@ -1,0 +1,8 @@
+.main{
+    position: relative;
+    display: flex;
+}
+.main-content{
+    width: 100%;
+    border: 1px solid;
+}

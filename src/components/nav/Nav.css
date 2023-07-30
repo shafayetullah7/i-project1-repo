@@ -1,0 +1,21 @@
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+}
+
+.avatar{
+    border: 1px solid;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.nav-profile{
+    width: fit-content;
+    display: flex;
+}
+
+.nav-profile-name{
+    font-size: 2rem;
+    font-weight: bold;
+}
