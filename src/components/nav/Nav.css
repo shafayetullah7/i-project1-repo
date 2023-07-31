@@ -43,3 +43,20 @@
     width: 3rem;
     color: rgb(61, 61, 61);
 }
+
+@media screen and (max-width:767px) {
+    .avatar{
+        /* border: 1px solid; */
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .nav-profile-name{
+        font-size: 1rem;
+        margin-bottom: 1px;
+    }
+    .nav-profile-expand-icon{
+        font-size: 1.2rem;
+        width: 2rem;
+    }
+}
