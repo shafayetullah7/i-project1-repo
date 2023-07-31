@@ -80,7 +80,7 @@ const Users = (props) => {
                 </thead>
                 
                 <tbody>
-                    {users && users.map(user=><tr key={user.id}>
+                    {users && users.map(user=><tr key={user.id} className='user'>
                         <td>{user.name}</td>
                         <td>{user.username}</td>
                         <td>{user.email}</td>

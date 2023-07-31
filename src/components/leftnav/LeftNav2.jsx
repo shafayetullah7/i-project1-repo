@@ -4,9 +4,9 @@ import { CgHashtag } from "react-icons/cg";
 import { FiSettings } from "react-icons/fi";
 import logo from '../../assets/logo.png';
 // import { PiHashStraightBold } from "react-icons/pi";
-const LeftNav = () => {
+const LeftNav2 = () => {
     return (
-        <div className="leftnav">
+        <div className="leftnav-2">
             {/* <div className="leftnav-icon logo color-primary">V</div> */}
             <img src={logo} className='logo' alt="" />
             <div className='leftnav-menu'>
@@ -24,4 +24,4 @@ const LeftNav = () => {
     );
 };
 
-export default LeftNav;
+export default LeftNav2;

@@ -5,13 +5,14 @@
     display: flex;
     align-items: start;
     justify-content: space-between;
-    padding-right: 5rem;
+    /* padding-right: 5rem; */
     padding-bottom:1rem;
 }
 .home-nav-start{
     display: flex;
     gap: 1.5rem;
     align-items: center;
+    /* border: 1px solid; */
 }
 .home-nav-items{
     list-style-type: none;
@@ -22,7 +23,9 @@
     border-radius: 4px;
     padding: 0 2px;
 }
-.home-nav-items li{
+
+
+.home-nav-item{
     font-size: 1.3rem;
     padding: 0.5rem 1rem;
     color: rgb(83, 83, 83);
@@ -32,13 +35,13 @@
     transition-duration: 0.4s;
 }
 
-.home-nav-items li:hover{
+.home-nav-item:hover{
     background-image: linear-gradient(to right, #0076ec, #66b1fb);
     color: white;
     font-weight: bold;
 }
 
-.home-nav-items li:active{
+.home-nav-item:active{
     background-image: linear-gradient(to right, #0076ec, #66b1fb);
     color: white;
     font-weight: bold;
@@ -49,6 +52,12 @@
     background-image: linear-gradient(to right, #0076ec, #66b1fb);
     color: white;
     font-weight: bold;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.4s;
 }
 
 .reload-icon{
@@ -126,4 +135,178 @@
     top: 5rem;
     left: 50%;
     transform: translateX(-50%);
+}
+
+
+@media screen and (max-width: 767px) {
+    .home-section{
+        padding: 0;
+    }
+    .home-nav{
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-right: 0px;
+        /* border: 1px solid; */
+    }
+    .home-nav-start{
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+    .home-nav-items{
+        gap: 0.5rem;
+        border-radius: 4px;
+        padding: 3px 1px;
+    }
+    
+    
+    .home-nav-item{
+        font-size: 1rem;
+        padding: 0.4rem 0.5rem;
+        border-radius: 4px;
+    }
+
+    
+    .home-nav-active{
+        font-size: 1rem;
+        padding: 0.4rem 0.5rem;
+        border-radius: 4px;
+
+    }
+    
+    .reload-icon{
+        font-size: 1rem;
+    }
+    
+    .download-btn{
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        gap: 4px;
+        box-shadow: 2px 2px 2px rgb(180, 180, 180);
+    }
+    
+    .download-btn:active{
+        transform: scale(0.9);
+    }
+    
+    .search-field{
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+    
+    
+    .search-btn{
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        gap: 8px;
+        box-shadow: 2px 2px 5px rgb(229, 229, 229);
+    }
+    
+    
+    .filter-icn{
+        font-size: 1.5rem;
+        color: rgb(110, 110, 110);
+    }
+    
+    .home-content{
+        position: relative;
+    }
+    
+    .spinner{
+        width: 2rem;
+        display: block;
+        position: absolute;
+        top: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Media query for tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .home-section{
+        padding: 0;
+    }
+    .home-nav{
+        /* flex-wrap: wrap; */
+        /* flex-direction: column; */
+        padding-top: 5px;
+        padding-right: 0px;
+        /* border: 1px solid; */
+    }
+    .home-nav-start{
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+    .home-nav-items{
+        gap: 0.5rem;
+        border-radius: 4px;
+        padding: 3px 1px;
+    }
+    
+    
+    .home-nav-item{
+        font-size: 1rem;
+        padding: 0.4rem 0.5rem;
+        border-radius: 4px;
+    }
+
+    
+    .home-nav-active{
+        font-size: 1rem;
+        padding: 0.4rem 0.5rem;
+        border-radius: 4px;
+
+    }
+    
+    .reload-icon{
+        font-size: 1rem;
+    }
+    
+    .download-btn{
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        gap: 4px;
+        box-shadow: 2px 2px 2px rgb(180, 180, 180);
+    }
+    
+    .download-btn:active{
+        transform: scale(0.9);
+    }
+    
+    .search-field{
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+    
+    
+    .search-btn{
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        gap: 8px;
+        box-shadow: 2px 2px 5px rgb(229, 229, 229);
+    }
+    
+    
+    .filter-icn{
+        font-size: 1.5rem;
+        color: rgb(110, 110, 110);
+    }
+
+    .home-content{
+        position: relative;
+    }
+    
+    .spinner{
+        width: 2rem;
+        display: block;
+        position: absolute;
+        top: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }

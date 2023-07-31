@@ -45,10 +45,10 @@ const Home = () => {
             <div className='home-nav'>
                 <div className='home-nav-start'>
                     <ul className="home-nav-items">
-                        <li onClick={()=>setTab('users')}>Users</li>
-                        <li onClick={()=>setTab('campaign')}>Campaign</li>
-                        <li onClick={()=>setTab('tables')}>Tables</li>
-                        <li onClick={()=>setTab('list')}>List</li>
+                        <li onClick={()=>setTab('users')} className={`${tab==='users'?'home-nav-active':'home-nav-item'}`}>Users</li>
+                        <li onClick={()=>setTab('campaign')} className={`${tab==='campaign'?'home-nav-active':'home-nav-item'}`}>Campaign</li>
+                        <li onClick={()=>setTab('tables')} className={`${tab==='tables'?'home-nav-active':'home-nav-item'}`}>Tables</li>
+                        <li onClick={()=>setTab('list')} className={`${tab==='list'?'home-nav-active':'home-nav-item'}`}>List</li>
                     </ul>
                     <TfiReload className='reload-icon' onClick={reload}></TfiReload>
                     <button className='download-btn'><BsDownload></BsDownload>Download</button>
