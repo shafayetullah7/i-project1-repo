@@ -1,9 +1,8 @@
-# React + Vite
+## Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Display all users from the API.
+- Perform a specific user search from all users.
+- Search by name, username, or email.
+- Search can be performed without mentioning whether the search string is name, email or username. The program will check if any data matches the search string as email, name or username. And the first match will be shown.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# i-project1-repo
+Visit the live site: [User Search App](https://bucolic-frangollo-d62582.netlify.app/).
