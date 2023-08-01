@@ -116,7 +116,7 @@ const Users = (props) => {
                     </tr>)}
                 </tbody>
             </table>
-            {/* <button onClick={handleOpen}>Open modal</button> */}
+
             <CustomModal open={open} handleClose={handleClose} content={userData}></CustomModal>
         </div>
     );

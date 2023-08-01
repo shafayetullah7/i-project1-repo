@@ -1,5 +1,6 @@
 import { Box, Modal } from "@mui/material";
 
+
 const style = {
     position: 'absolute',
     top: '50%',
@@ -17,17 +18,23 @@ const style = {
         maxWidth: 300, // Adjust the maxWidth for screens up to 400px wide (e.g., mobile devices)
     },
   };
+
   
-  const CustomModal = ({ open, handleClose,content }) => {
+  
+
+
+  const CustomModal = ({ open, handleClose,content}) => {
+
+
     return (
       <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          {content};
+            {content}
         </Box>
       </Modal>
     );
